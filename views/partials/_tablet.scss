@@ -1,0 +1,44 @@
+@media screen and (min-width: 54em) and (max-width: 81em) {
+    @keyframes HideShowAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .main {
+        .main-container {
+
+            .main-container-inner {
+                width: 90%;
+                height: 90%;
+
+                .inner-container {
+                    main.info-field {
+                        width: 80%;
+                        height: 100%;
+
+                        .text-box {
+                            .link {
+                                ul {
+                                    max-height: 15em;
+                                }
+                            }
+                        }
+
+                        ul {
+                            li {
+                                a {
+                                    letter-spacing: 0.05em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

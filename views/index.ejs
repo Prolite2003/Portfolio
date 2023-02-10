@@ -1,0 +1,173 @@
+<%- include('./partials/head') %>
+
+
+
+
+    <div class="main">
+        <div class="main-container">
+            <div class="main-container-inner">
+                <div class="inner-container">
+                    <header>
+                        <div class="logo">
+                            <a href=""><img src=" <%= member.avatar %>" alt=""></a>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="email">
+                                    <a
+                                        href="mailto:stefanschooneveld@hotmail.com?subject=Email&#160;from&#160;website:&#160;https://mauve-prawn-wrap.cyclic.app/">
+                                        <i class="fa-solid fa-envelope fa-xl"></i></a>
+                                    <!-- <a href=""><img src="./img/mail-logo.png" alt=""></a> -->
+                                </li>
+                                <li class="github">
+                                    <a href="<%= member.gitHubHandle %>"><i class="fa-brands fa-github fa-xl"></i></a>
+                                </li>
+                                <li class="linkedin">
+                                    <a href="https://www.linkedin.com/in/stefan-schooneveld-b230b0264/"><i
+                                            class="fa-brands fa-linkedin fa-xl"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </header>
+                    <main class="info-field">
+                        <div class="text-box">
+                            <div id="welcome" class="welcome">
+                                <h1>Welcome</h1>
+                                <span>
+                                    <span>
+                                        Welcome my name is <%= member.fullname %>, I'm a junior front-end developer
+                                            studying at Hogeschool van Amsterdam. I made this website as a project for
+                                            school to get us started with node.
+                                    </span>
+                                    <span>
+                                        <%= member.bio.html %>
+                                    </span>
+                                </span>
+                            </div>
+                            <div id="aboutme" class="link">
+                                <h2>About me</h2>
+                                <span>
+                                    <span>
+                                        I'm <%= member.age %> years old, i'm learning to become a front end developer.
+                                            Besides programming i also like learning new things in general, reading
+                                            books and playing chess (Live Elo: <%= member.chessrating %> ). I currently
+                                                work at Starbucks sinds December 2021 and plan on working there until i
+                                                finish my education in 2024. If you are interested in me or wanna hire
+                                                me, you can downlaod my CV down here.
+                                    </span>
+
+                                    <span>
+                                        <a class="cv" href="./Stefan-Schooneveld-CV.pdf" target="_blank"
+                                            download="Stefan-Schooneveld-CV.pdf">
+                                            cv
+                                        </a>
+
+                                    </span>
+                                </span>
+                            </div>
+                            <div id="experience" class="link">
+                                <h2>Experience</h2> <span>
+                                    <span>
+                                        <!-- I have some junior experience with html, scss, javascipt, node and github. -->
+                                        <ul>
+                                            <li>HTML sinds 2019
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>SCSS sinds 2020
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>Javascipt sinds 2021
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>Node sinds 2023
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                            <li>Github sinds 2019
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star checked"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </div>
+                            <div id="internships" class="link">
+                                <h2>Internships</h2> <span>
+                                    <span>
+                                        <!-- I had a few internships, i started with a 2 week internship for Incentro, after
+                                        that i did a 6 week internship at a elementary school because i wanted to see
+                                        what
+                                        its like to teach kids and at last i did a one year internship at ING, -->
+                                        <ul>
+                                            <li>
+                                                <h3>Incentro:</h3>i started with a 2 week internship for Incentro
+                                            </li>
+                                            <li>
+                                                <h3>obs de bijenkorf:</h3> i did a 6 week internship at a elementary
+                                                school because i wanted to see
+                                                what
+                                                its like to teach kids
+                                            </li>
+                                            <li>
+                                                <h3>ING:</h3>i did a one year internship at ING
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </div>
+                            <div id="projects" class="link">
+                                <h2>Projects</h2> <span>
+                                    <span>
+                                        I am currently building a website for renting out a camper. 4 years ago I
+                                        started building my first website for incentro, in the meantime I have grown in
+                                        its development.
+                                    </span>
+                                    <span>
+                                        <a href="./maintenance.html">Camping</a>
+                                        <a href="./maintenance.html">Incentro</a>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="spacer"></div> -->
+                        <div class="usefull-links">
+                            <h2>More Information</h2>
+                            <div class="links-wrapper">
+                                <ul>
+                                    <li><a href="#" onclick="HideShow('aboutme')" id="aboutmebutton"><span>About
+                                                me</span></a></li>
+                                    <li><a href="#" onclick="HideShow('experience')"
+                                            id="experiencebutton"><span>Experience</span></a></li>
+                                    <li><a href="#" onclick="HideShow('internships')"
+                                            id="internshipsbutton"><span>Internships</span></a></li>
+                                    <li><a href="#" onclick="HideShow('projects')"
+                                            id="projectsbutton"><span>Projects</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('./partials/foot') %>
