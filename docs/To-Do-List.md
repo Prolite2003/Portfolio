@@ -12,7 +12,7 @@
 #### Update the dark mode on the website
 #### I need to update the dark and lightmode feature for the website so it will look good on both dark and light mode
 #### 17-02-2023
-#### ---
+#### 21-02-2023 (Dark mode was alright but had the wrong extension for it, made an option for future changes to dark mode in the styling)
 
 ### Idea number 2:
 #### Change the way the information is displayed on the website
