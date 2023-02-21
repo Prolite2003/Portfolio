@@ -206,6 +206,11 @@ body {
   transform: scale(1.2);
 }
 
+@media screen and (max-height: 1956px) {
+  .main .main-container .main-container-inner {
+    height: 37em;
+  }
+}
 @media screen and (max-width: 54em) {
   @keyframes HideShowAnimation {
     0% {

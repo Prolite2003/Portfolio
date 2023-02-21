@@ -79,3 +79,9 @@
 #### I want it the be a menu where you can select the website and that it will show you more info about what i did,why i did it and my development in it.
 #### 17-02-2023
 #### ---
+
+### Idea number 13:
+#### Website zoom fix
+#### The website has a layour problem when zoomed in between 110% and 130%.
+#### 17-02-2023
+#### 21-02-2003 (It was a responsive issue with the height not being detected.)
