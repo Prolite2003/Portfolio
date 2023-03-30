@@ -7,27 +7,6 @@ const app = express()
 const url = ('https://whois.fdnd.nl/api/v1/member/stefan-schooneveld');
 const data = await fetch(url).then((response) => response.json())
 
-const fullname = (data.member.name + ' ' + data.member.surname);
-data.member.fullname = fullname;
-
-
-let BD = new Date("03/30/2003");
-//calculate month difference from current date in time
-let month_diff = Date.now() - BD.getTime();
-
-//convert the calculated difference in date format
-let age_format = new Date(month_diff); 
-
-//extract year from date    
-let year = age_format.getUTCFullYear();
-
-data.member.age = Math.abs(year - 1970);
-
-
-const ChessUrl = ('https://api.chess.com/pub/player/prolite2003/stats')
-const ChessData = await fetch(ChessUrl).then((response) => response.json())
-
-data.member.chessrating = ChessData.chess_rapid.last.rating;
 
 // Stel ejs in als template engine en geef de 'views' map door
 app.set('view engine', 'ejs')
