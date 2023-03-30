@@ -1,13 +1,13 @@
 @media screen and (max-width: 54em) {
-    @keyframes HideShowAnimation {
-        0% {
-            opacity: 0;
-        }
+    // @keyframes HideShowAnimation {
+    //     0% {
+    //         opacity: 0;
+    //     }
 
-        100% {
-            opacity: 1;
-        }
-    }
+    //     100% {
+    //         opacity: 1;
+    //     }
+    // }
 
     .main {
         .main-container {
@@ -31,6 +31,33 @@
                                 ul {
                                     max-height: 15em;
                                 }
+                            }
+                        }
+
+                        #CampingText,
+                        #PortfolioText,
+                        #MainText,
+                        #SpoilAppText {
+                            height: 10em;
+                            overflow: scroll;
+                        }
+
+                        span.textbtns {
+                            display: flex !important;
+                            flex-direction: row;
+                            gap: 0.5em;
+                            text-align: center;
+
+                            a {
+                                font-size: 0.8em;
+                                width: 6.5em;
+                            }
+                        }
+
+                        span {
+                            span:nth-child(1) {
+                                max-height: 10em;
+                                overflow: scroll;
                             }
                         }
 
@@ -58,6 +85,7 @@
                             h2 {
                                 text-align: center;
                             }
+
                             .links-wrapper {
                                 ul {
                                     display: flex;

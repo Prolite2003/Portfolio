@@ -201,14 +201,6 @@ body {
 }
 
 @media screen and (max-width: 54em) {
-  @keyframes HideShowAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   .main .main-container .main-container-inner {
     width: 90%;
     height: 90%;
@@ -224,6 +216,27 @@ body {
   }
   .main .main-container .main-container-inner .inner-container main.info-field .text-box .link ul {
     max-height: 15em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field #CampingText,
+  .main .main-container .main-container-inner .inner-container main.info-field #PortfolioText,
+  .main .main-container .main-container-inner .inner-container main.info-field #MainText,
+  .main .main-container .main-container-inner .inner-container main.info-field #SpoilAppText {
+    height: 10em;
+    overflow: scroll;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span.textbtns {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5em;
+    text-align: center;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span.textbtns a {
+    font-size: 0.8em;
+    width: 6.5em;
+  }
+  .main .main-container .main-container-inner .inner-container main.info-field span span:nth-child(1) {
+    max-height: 10em;
+    overflow: scroll;
   }
   .main .main-container .main-container-inner .inner-container main.info-field ul li a {
     letter-spacing: 0.05em;
@@ -241,14 +254,6 @@ body {
   }
 }
 @media screen and (min-width: 54em) and (max-width: 81em) {
-  @keyframes HideShowAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   .main .main-container .main-container-inner {
     width: 90%;
     height: 90%;
