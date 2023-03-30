@@ -6,7 +6,7 @@
   }
 
   .hide {
-    display: none;
+    display: none !important;
   }
 
   .show {
@@ -17,22 +17,16 @@
     color: orange;
   }
 
+
   @keyframes HideShowAnimation {
     0% {
       opacity: 0;
-      left: 600px;
-      top: 300px;
-    }
-
-    50% {
-      opacity: 1;
-      top: 300px;
     }
 
     100% {
-      top: 0px;
-      left: 0px;
+      opacity: 1;
     }
+
   }
 
   .main {
@@ -151,8 +145,12 @@
               }
 
               .welcome {
+                display: none;
                 opacity: 1;
               }
+
+              // Here needs to come a loop for the --i so that it increases unto 1000 characters
+
 
               .link {
                 // opacity: 0;
@@ -287,36 +285,28 @@
     }
   }
 
-// Responsive fixed for standard zoom
+  // Responsive fixed for standard zoom
 
-  @media screen and (max-height:1956px) {
-    .main {
-      .main-container {
+  // @media screen and (max-height:1956px) {
+  //   .main {
+  //     .main-container {
 
-        .main-container-inner {
-          height: 37em;
-        }
-      }
-    }
-  }
+  //       .main-container-inner {
+  //         height: 37em;
+  //       }
+  //     }
+  //   }
+  // }
 
   // Dark mode media
-  @media (prefers-color-scheme: dark) {
-    .main {
-      .main-container {
-        .main-container-inner {
-          // background: radial-gradient(circle at 100% 100%, #1d1d20 0, #1d1d20 5px, transparent 5px) 0% 0%/15px 15px no-repeat,
-          // radial-gradient(circle at 0 100%, #1d1d20 0, #1d1d20 5px, transparent 5px) 100% 0%/15px 15px no-repeat,
-          // radial-gradient(circle at 100% 0, #1d1d20 0, #1d1d20 5px, transparent 5px) 0% 100%/15px 15px no-repeat,
-          // radial-gradient(circle at 0 0, #1d1d20 0, #1d1d20 5px, transparent 5px) 100% 100%/15px 15px no-repeat,
-          // linear-gradient(#1d1d20, #1d1d20) 50% 50%/calc(100% - 20px) calc(100% - 30px) no-repeat,
-          // linear-gradient(#1d1d20, #1d1d20) 50% 50%/calc(100% - 30px) calc(100% - 20px) no-repeat,
-          // linear-gradient(135deg, transparent 75%, #0e4153 80%, #088000 100%),
-          // linear-gradient(315deg, transparent 75%, #088000 80%, #0e4153 100%);
-        }
-      }
-    }
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   .main {
+  //     .main-container {
+  //       .main-container-inner {
+  //       }
+  //     }
+  //   }
+  // }
 
   @import './views/partials/phone';
   @import './views/partials/tablet';

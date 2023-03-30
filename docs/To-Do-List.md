@@ -18,7 +18,7 @@
 #### Change the way the information is displayed on the website
 #### I want to change the information so it is alot clearer on who i am and what i accomplished
 #### 17-02-2023
-#### ---
+#### 29-03-2023 (Made the text a story so its a bit more fun and good to read)
 
 ### Idea number 3:
 #### I want to build my own api with all the info that i want and need so i can re-use it for all my web applications
@@ -57,13 +57,13 @@
 #### ---
 
 ### Idea number 9:
-#### CV needs to be up te date
+#### CV needs to be up to date
 #### I need to have a way that my cv is always up to date
 #### 17-02-2023
 #### ---
 
 ### Idea number 10:
-####  maintenance pages either needs to be updated or removed 
+#### Maintenance pages either needs to be updated or removed 
 #### The maintenance pages need to be changed into the real website or removed becuase now it looks foolish to have it there
 #### 17-02-2023
 #### ---
@@ -75,13 +75,13 @@
 #### ---
 
 ### Idea number 12:
-####  Projects tab on the website 
+#### Projects tab on the website 
 #### I want it the be a menu where you can select the website and that it will show you more info about what i did,why i did it and my development in it.
 #### 17-02-2023
 #### ---
-
+w
 ### Idea number 13:
 #### Website zoom fix
-#### The website has a layour problem when zoomed in between 110% and 130%.
-#### 17-02-2023
+#### The website has a layout problem when zoomed in between 110% and 130%.
+#### 17-02-2023 || 23-02 (Problem came again because the main styling changed with it and that didn't look good anymore)
 #### 21-02-2003 (It was a responsive issue with the height not being detected.)

@@ -1,11 +1,19 @@
 function HideShow(x) {
+  let Subjects = document.querySelectorAll("div.HiddenItem");
 
-    document.getElementById("welcome").style.display = 'none';
-    document.getElementById("aboutme").style.display = 'none';
-    document.getElementById("experience").style.display = 'none';
-    document.getElementById("internships").style.display = 'none';
-    document.getElementById("projects").style.display = 'none';
+  Subjects.forEach((Subject) => {
+    Subject.classList.remove("show");
+  });
 
-    document.getElementById(x).style.display = 'block';
+  document.getElementById(x).classList.add("show");
+}
 
+function ChangeProjectText(x) {
+  let Texts = document.querySelectorAll("span.HiddenItem");
+
+  Texts.forEach((Text) => {
+    Text.classList.remove("show");
+  });
+
+  document.getElementById(x).classList.add("show");
 }

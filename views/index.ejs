@@ -32,29 +32,32 @@
                     </header>
                     <main class="info-field">
                         <div class="text-box">
-                            <div id="welcome" class="welcome">
+                            <div id="welcome" class="welcome HiddenItem show">
                                 <h1>Welcome</h1>
                                 <span>
                                     <span>
-                                        Welcome my name is Stefan Schooneveld, I'm a junior front-end developer
-                                        studying at Hogeschool van Amsterdam.
+                                        My name is Stefan Schooneveld, I’m 20 years old, and I’m a junior front-end
+                                        developer.
                                     </span>
                                     <span>
                                         <%= member.bio.html %>
                                     </span>
                                 </span>
                             </div>
-                            <div id="aboutme" class="link">
-                                <h2>About me</h2>
+                            <div id="aboutme" class="link HiddenItem">
+                                <h2>Who am i?</h2>
                                 <span>
                                     <span>
-                                        I'm <%= member.age %> years old, i'm studying to become a front end developer.
-                                            Besides programming i also like learning new things in general, reading and
-                                            playing chess (Live Elo: <%= member.chessrating %> ). I currently
-                                                work at Starbucks i started in December 2021. If you are interested in
-                                                me or wanna hire
-                                                me, you can downlaod my CV down here or send me an email using the icon
-                                                in the top right.
+                                        I’m someone who enjoys learning a variety of new things, from a new coding
+                                        language to cooking a 3-course meal. <br>
+                                        I have a MBO 4 diploma for software and media developers. I learned a lot about
+                                        HTML, CSS, SCSS,JavaScript, GitHub, and Node. I also learned about databases and
+                                        apis.
+                                        I’m someone that loves to learn new things, especially with coding, and I’m
+                                        always interested in how it works and how I could apply it to my new or current
+                                        projects to change or improve them. Besides coding, I also like cooking from
+                                        time to time, playing board and card games, playing games online with friends,
+                                        and going to the gym.
                                     </span>
 
                                     <span>
@@ -66,11 +69,11 @@
                                     </span>
                                 </span>
                             </div>
-                            <div id="experience" class="link">
-                                <h2>Experience</h2> <span>
+                            <div id="experience" class="link HiddenItem">
+                                <h2>What can i do?</h2> <span>
                                     <span>
                                         <!-- I have some junior experience with html, scss, javascipt, node and github. -->
-                                        <ul>
+                                        <!-- <ul>
                                             <li>I started with HTML in 2019
                                                 <i class="fa fa-star checked"></i>
                                                 <i class="fa fa-star checked"></i>
@@ -106,44 +109,62 @@
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                             </li>
+                                        </ul> -->
+                                        <ul>
+                                            <li><button onclick="ShowSkill(HTML)">HTML</button></li>
+                                            <li><button onclick="ShowSkill(CSS)">CSS</button></li>
+                                            <li><button onclick="ShowSkill(JavaScript)">JavaScript</button></li>
+                                            <li><button onclick="ShowSkill(Node)">Node</button></li>
+                                            <li><button onclick="ShowSkill(Github)">Github</button></li>
                                         </ul>
                                     </span>
                                 </span>
                             </div>
-                            <div id="internships" class="link">
+                            <!-- <div id="internships" class="link HiddenItem">
                                 <h2>Internships</h2> <span>
                                     <span>
-                                        <!-- I had a few internships, i started with a 2 week internship for Incentro, after
-                                        that i did a 6 week internship at a elementary school because i wanted to see
-                                        what
-                                        its like to teach kids and at last i did a one year internship at ING, -->
-                                        <ul>
-                                            <li>
-                                                <h3>Incentro:</h3>i started with a 2 week internship for Incentro
-                                            </li>
-                                            <li>
-                                                <h3>obs de bijenkorf:</h3> i did a 6 week internship at a elementary
-                                                school because i wanted to see
-                                                what
-                                                its like to teach kids
-                                            </li>
-                                            <li>
-                                                <h3>ING:</h3>i did a one year internship at ING
-                                            </li>
-                                        </ul>
+                         
                                     </span>
                                 </span>
-                            </div>
-                            <div id="projects" class="link">
-                                <h2>Projects</h2> <span>
+                            </div> -->
+                            <div id="projects" class="link HiddenItem">
+                                <h2>What kind of projects have i already done?</h2> <span>
                                     <span>
-                                        I am currently building a website for renting out a camper. 4 years ago I
-                                        started building my first website for incentro, in the meantime I have grown in
-                                        its development.
+                                        I have started some projects that I would like to showcase; below are buttons
+                                        with the different projects; you can press them to read something about them as
+                                        well as visit the website itself.
+                                    </span>
+                                    <span id="CampingText" class="link HiddenItem">
+                                        This is my first ever website I made for someone else. I started this project
+                                        because the grandson of my girlfriend rents her caravan from time to time, and
+                                        she always wanted a website to show people what they could do, so I started
+                                        working on it, and this is the finished project.
+
+                                    </span>
+                                    <span id="SpoilAppText" class="link HiddenItem">
+                                        This is my first ever app that I created. The app is able to store your products
+                                        in a list and sort them by spoilage date. The reason I started making this is
+                                        because I see a lot of people throw away food because they forget about it, and
+                                        it rots and spoils. So I wanted to challenge myself to make an application that
+                                        would fix this problem.
+
+                                    </span>
+                                    <span id="PortfolioText" class="link HiddenItem">
+                                        This is my first portfolio that I created, as is the website you are currently
+                                        looking at. I started this project so that I could show more about myself. At
+                                        first, I didn’t know what I should make, so I searched the Internet for
+                                        different examples, and based on those, I decided that I wanted to make a small
+                                        website with a lot of information and some cool little features like, Did you
+                                        know that all this information is coming from a database? Why, you may ask?
+                                        Well, I wanted to be able to always have my projects up to date with all my new
+                                        skills and hobbies, so I decided that I would make a database that I could
+                                        access from anywhere so if I needed to change any information, I could do it
+                                        wherever and whenever I wanted without changing any of my code.
                                     </span>
                                     <span>
-                                        <a href="./maintenance.html">Camping</a>
-                                        <a href="./maintenance.html">Incentro</a>
+                                        <a onclick="ChangeProjectText('CampingText')" href="#">Camping</a>
+                                        <a onclick="ChangeProjectText('SpoilAppText')" href="#">Spoil app</a>
+                                        <a onclick="ChangeProjectText('PortfolioText')" href="#">Portfolio</a>
                                     </span>
                                 </span>
                             </div>
@@ -157,8 +178,8 @@
                                                 me</span></a></li>
                                     <li><a href="#" onclick="HideShow('experience')"
                                             id="experiencebutton"><span>Experience</span></a></li>
-                                    <li><a href="#" onclick="HideShow('internships')"
-                                            id="internshipsbutton"><span>Internships</span></a></li>
+                                    <!-- <li><a href="#" onclick="HideShow('internships')"
+                                            id="internshipsbutton"><span>Internships</span></a></li> -->
                                     <li><a href="#" onclick="HideShow('projects')"
                                             id="projectsbutton"><span>Projects</span></a></li>
                                 </ul>
