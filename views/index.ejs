@@ -39,9 +39,6 @@
                                         My name is Stefan Schooneveld, I’m 20 years old, and I’m a junior front-end
                                         developer.
                                     </span>
-                                    <span>
-                                        <%= member.bio.html %>
-                                    </span>
                                 </span>
                             </div>
                             <div id="aboutme" class="link HiddenItem">
@@ -60,7 +57,7 @@
                                         and going to the gym.
                                     </span>
 
-                                    <span>
+                                    <span class="cvbtn">
                                         <a class="cv" href="./docs/Stefan-Schooneveld-CV.pdf" target="_blank"
                                             download="Stefan-Schooneveld-CV.pdf">
                                             cv
@@ -72,51 +69,9 @@
                             <div id="experience" class="link HiddenItem">
                                 <h2>What can i do?</h2> <span>
                                     <span>
-                                        <!-- I have some junior experience with html, scss, javascipt, node and github. -->
-                                        <!-- <ul>
-                                            <li>I started with HTML in 2019
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                            <li>I started with SCSS in 2020
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                            <li>I started with Javascipt in 2021
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                            <li>I started with Node in 2023
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                            <li>I started with Github in 2019
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star checked"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </li>
-                                        </ul> -->
-                                        <ul>
-                                            <li><button onclick="ShowSkill(HTML)">HTML</button></li>
-                                            <li><button onclick="ShowSkill(CSS)">CSS</button></li>
-                                            <li><button onclick="ShowSkill(JavaScript)">JavaScript</button></li>
-                                            <li><button onclick="ShowSkill(Node)">Node</button></li>
-                                            <li><button onclick="ShowSkill(Github)">Github</button></li>
-                                        </ul>
+                                   There still needs to come a good story or a way for me to show my expiences.
+                                   
+                                   
                                     </span>
                                 </span>
                             </div>
@@ -128,44 +83,46 @@
                                 </span>
                             </div> -->
                             <div id="projects" class="link HiddenItem">
-                                <h2>What kind of projects have i already done?</h2> <span>
-                                    <span>
-                                        I have started some projects that I would like to showcase; below are buttons
-                                        with the different projects; you can press them to read something about them as
-                                        well as visit the website itself.
-                                    </span>
-                                    <span id="CampingText" class="link HiddenItem">
-                                        This is my first ever website I made for someone else. I started this project
-                                        because the grandson of my girlfriend rents her caravan from time to time, and
-                                        she always wanted a website to show people what they could do, so I started
-                                        working on it, and this is the finished project.
+                                <h2>What kind of projects have i already done?</h2>
+                                <span id="MainText" class="HiddenItem">
 
-                                    </span>
-                                    <span id="SpoilAppText" class="link HiddenItem">
-                                        This is my first ever app that I created. The app is able to store your products
-                                        in a list and sort them by spoilage date. The reason I started making this is
-                                        because I see a lot of people throw away food because they forget about it, and
-                                        it rots and spoils. So I wanted to challenge myself to make an application that
-                                        would fix this problem.
+                                    I have started some projects that I would like to showcase; below are buttons
+                                    with the different projects; you can press them to read something about them as
+                                    well as visit the website itself.
 
-                                    </span>
-                                    <span id="PortfolioText" class="link HiddenItem">
-                                        This is my first portfolio that I created, as is the website you are currently
-                                        looking at. I started this project so that I could show more about myself. At
-                                        first, I didn’t know what I should make, so I searched the Internet for
-                                        different examples, and based on those, I decided that I wanted to make a small
-                                        website with a lot of information and some cool little features like, Did you
-                                        know that all this information is coming from a database? Why, you may ask?
-                                        Well, I wanted to be able to always have my projects up to date with all my new
-                                        skills and hobbies, so I decided that I would make a database that I could
-                                        access from anywhere so if I needed to change any information, I could do it
-                                        wherever and whenever I wanted without changing any of my code.
-                                    </span>
-                                    <span>
-                                        <a onclick="ChangeProjectText('CampingText')" href="#">Camping</a>
-                                        <a onclick="ChangeProjectText('SpoilAppText')" href="#">Spoil app</a>
-                                        <a onclick="ChangeProjectText('PortfolioText')" href="#">Portfolio</a>
-                                    </span>
+                                </span>
+                                <span id="CampingText" class="hide HiddenItem">
+                                    This is my first ever website I made for someone else. I started this project
+                                    because the grandson of my girlfriend rents her caravan from time to time, and
+                                    she always wanted a website to show people what they could do, so I started
+                                    working on it, and this is the finished project.
+
+                                </span>
+                                <span id="SpoilAppText" class="hide HiddenItem">
+                                    This is my first ever app that I created. The app is able to store your products
+                                    in a list and sort them by spoilage date. The reason I started making this is
+                                    because I see a lot of people throw away food because they forget about it, and
+                                    it rots and spoils. So I wanted to challenge myself to make an application that
+                                    would fix this problem.
+
+                                </span>
+                                <span id="PortfolioText" class="hide HiddenItem">
+                                    This is my first portfolio that I created, as is the website you are currently
+                                    looking at. I started this project so that I could show more about myself. At
+                                    first, I didn’t know what I should make, so I searched the Internet for
+                                    different examples, and based on those, I decided that I wanted to make a small
+                                    website with a lot of information and some cool little features like, Did you
+                                    know that all this information is coming from a database? Why, you may ask?
+                                    Well, I wanted to be able to always have my projects up to date with all my new
+                                    skills and hobbies, so I decided that I would make a database that I could
+                                    access from anywhere so if I needed to change any information, I could do it
+                                    wherever and whenever I wanted without changing any of my code.
+                                </span>
+                                <span class="textbtns">
+                                    <a onclick="ChangeProjectText('CampingText')" href="#">Camping</a>
+                                    <a onclick="ChangeProjectText('SpoilAppText')" href="#">Spoil app</a>
+                                    <a onclick="ChangeProjectText('PortfolioText')" href="#">Portfolio</a>
+                                </span>
                                 </span>
                             </div>
                         </div>

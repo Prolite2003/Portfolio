@@ -44,11 +44,11 @@
 #### 17-02-2023
 #### ---
 
-### Idea number 7:
+<!-- ### Idea number 7:
 #### Removing/Remodeling the FDND api.
 #### Currently im using the api for most of my info but i either want to remove it or change it with my own api.
 #### 17-02-2023
-#### ---
+#### --- -->
 
 ### Idea number 8:
 #### Add comments on what the code does
@@ -66,7 +66,7 @@
 #### Maintenance pages either needs to be updated or removed 
 #### The maintenance pages need to be changed into the real website or removed becuase now it looks foolish to have it there
 #### 17-02-2023
-#### ---
+#### 31-03-2023 (removed it for now, want to update it later)
 
 ### Idea number 11:
 #### Experience tab on the website
@@ -79,7 +79,7 @@
 #### I want it the be a menu where you can select the website and that it will show you more info about what i did,why i did it and my development in it.
 #### 17-02-2023
 #### ---
-w
+
 ### Idea number 13:
 #### Website zoom fix
 #### The website has a layout problem when zoomed in between 110% and 130%.

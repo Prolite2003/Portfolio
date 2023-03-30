@@ -12,8 +12,8 @@ function ChangeProjectText(x) {
   let Texts = document.querySelectorAll("span.HiddenItem");
 
   Texts.forEach((Text) => {
-    Text.classList.remove("show");
+    Text.classList.add("hide");
   });
 
-  document.getElementById(x).classList.add("show");
+  document.getElementById(x).classList.remove("hide");
 }
