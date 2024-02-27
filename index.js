@@ -1,9 +1,6 @@
 // Import express module
 import express from "express";
 
-// Import node-fetch for making HTTP requests
-import fetch from "node-fetch";
-
 // Create a new express app
 const app = express();
 
