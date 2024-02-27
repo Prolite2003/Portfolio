@@ -1,30 +1,38 @@
-// Importeer express uit de node_modules map
+// Import express module
 import express from "express";
 
-// Maak een nieuwe express app aan
+// Import node-fetch for making HTTP requests
+import fetch from "node-fetch";
+
+// Create a new express app
 const app = express();
 
-const url = "https://whois.fdnd.nl/api/v1/member/stefan-schooneveld";
-const data = await fetch(url).then((response) => response.json());
+// Define sample data (simulated response data)
+const sampleData = {
+  name: "Stefan Schooneveld",
+  occupation: "Web Developer",
+  location: "Netherlands",
+  // Add more sample data as needed
+};
 
-// Stel ejs in als template engine en geef de 'views' map door
+// Set EJS as the template engine and specify the 'views' directory
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-// Gebruik de map 'public' voor statische resources
+// Serve static files from the 'public' directory
 app.use(express.static("public"));
 
-// Maak een route voor de index
+// Define a route for the index page
 app.get("/", function (req, res) {
-  // res.send('Hello World!')
-  res.render("index", data);
+  // Render the 'index' template and pass the sample data to it
+  res.render("index", sampleData);
 });
 
-// Stel het poortnummer in waar express op gaat luisteren
+// Set the port number for the Express app
 app.set("port", process.env.PORT || 8000);
 
-// Start express op, haal het ingestelde poortnummer op
+// Start the Express server and listen on the specified port
 app.listen(app.get("port"), function () {
-  // Toon een bericht in de console en geef het poortnummer door
+  // Display a message in the console indicating that the application has started
   console.log(`Application started on http://localhost:${app.get("port")}`);
 });
